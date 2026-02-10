@@ -1,0 +1,142 @@
+/* Container & Layout */
+.programme-section {
+    padding: 100px 0;
+    background-color: #0f172a; /* Consistent with Talon IT Dark mode */
+}
+
+.programme-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Timeline Aesthetics */
+.timeline {
+    position: relative;
+    border-left: 2px solid #1e293b;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -41px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #0ea5e9; /* Talon IT Teal */
+    border: 4px solid #0f172a;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+}
+
+.week-label {
+    display: inline-block;
+    background: rgba(14, 165, 233, 0.1);
+    color: #38bdf8;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.lesson-highlights {
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.lesson-highlights li {
+    background: #1e293b;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Pricing Card */
+.pricing-card {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #0ea5e9;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card-popular {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #0ea5e9;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 15px 0 5px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+.pricing-features {
+    list-style: none;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.pricing-features li {
+    margin-bottom: 12px;
+    color: #f8fafc;
+}
+
+.full-width {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-box {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.email-link {
+    color: #0ea5e9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .programme-grid {
+        grid-template-columns: 1fr;
+    }
+    .pricing-sidebar {
+        order: -1; /* Move price to top on mobile for better conversion */
+        margin-bottom: 40px;
+    }
+}
